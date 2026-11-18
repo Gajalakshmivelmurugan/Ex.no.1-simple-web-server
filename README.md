@@ -94,21 +94,26 @@ simple-web-server/
 
 ### DemoApplication.java
 
-package com.example.demo;
+```
+package com.example.exp1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class Exp1Application {
+
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Exp1Application.class, args);
     }
 }
 
+```
 
 ### HelloController.java
-package com.example.demo;
+
+```
+package com.example.exp1;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -123,13 +128,22 @@ public class HelloController {
 }
 
 
+```
 ### application.properties:
 
- server.port=8081
+```
+spring.application.name=exp1
+server.port=8081
+
+```
 
 
+## Output:
 
 
-Output:
+<img width="1723" height="741" alt="image" src="https://github.com/user-attachments/assets/4859a77a-c2c7-492a-ad03-b7838ed58596" />
 
 
+## Result:
+
+Thus, the Simple Web Server was successfully developed using Spring Boot. The application was able to handle basic HTTP requests through RESTful endpoints and return appropriate responses for the requested URLs.
